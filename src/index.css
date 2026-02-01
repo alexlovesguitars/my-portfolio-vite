@@ -1,0 +1,158 @@
+:root {
+  font-family: "Montserrat", sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: #FFF0E9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #7F1A36
+};
+
+/* Typograpgy */
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-bottom: 0;
+  font-size: 2.875rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #B17F4B;
+  font-size: 2rem;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #B17F4B;
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button[type="submit"] {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+}
+
+ul, ol {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+/* XS Screens */
+
+@media (max-width: 576px) {
+  .container-fluid {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 768px) {
+  .container-fluid {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  p, li {
+    font-size: 1.1rem;
+  }
+}
+
+/* XL Screens */
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p, li {
+    font-size: 1.15rem;
+  }
+}
+
+/* XXL Screens */
+
+@media (min-width: 1400px) {
+  .container-fluid {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p, li {
+    font-size: 1.2rem;
+  }
+}

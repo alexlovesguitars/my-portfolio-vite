@@ -1,0 +1,32 @@
+.mobile-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.mobile-menu a {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "DM Mono";
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  opacity: 0.7;
+}
+
+.menu-close {
+  background-color: transparent;
+  border: none;
+}
+
+/* Kill ALL white backgrounds from the pane */
+.slide-pane__content, .mobile-pane,
+.slide-pane__content-inner, .slide-pane__overlay {
+  background-color: rgba(0, 34, 45, 0.8) !important;
+}

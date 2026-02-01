@@ -1,0 +1,57 @@
+.project-card,
+.project-card:hover,
+.project-card:focus,
+.project-card:visited {
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: black;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #B17F4B;
+}
+
+.project-picture {
+
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+.project-card {
+  position: relative;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 34, 45, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card:hover .language-logo {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.language-logo {
+  max-width: clamp(4rem, 6vw, 8rem);
+  height: auto;
+}

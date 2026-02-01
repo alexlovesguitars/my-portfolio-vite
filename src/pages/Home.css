@@ -1,0 +1,24 @@
+.git-home {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  text-decoration: none;
+}
+
+.project-card,
+.project-card:hover,
+.project-card:focus,
+.project-card:visited {
+  text-decoration: none;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

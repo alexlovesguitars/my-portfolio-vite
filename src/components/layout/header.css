@@ -1,0 +1,66 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  flex-grow: inherit;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.875rem 0 2rem 0;
+}
+
+.Menu {
+  width: 1.875rem;
+  height: 2.625rem;
+}
+
+.menu-btn {
+  border: none;
+  background-color: #FFF0E9;
+}
+
+.Menu--desktop {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+  .Logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .Logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Logo {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Logo {
+    width: 4rem;
+    height: 4rem;
+  }
+}
