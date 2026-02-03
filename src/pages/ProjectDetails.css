@@ -8,6 +8,11 @@
   padding-bottom: 5rem;
 }
 
+.view-button:hover {
+  background-color: #085538;
+  transition: 0.2s ease-in;
+}
+
 .project-info h1 {
   margin: 0;
 }
@@ -56,7 +61,7 @@
 
 .learnings {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 4rem;
   align-items: start;
   margin: 3.875rem 0 5rem;
@@ -157,6 +162,9 @@
   }
   .project-process {
     padding: 0 9rem 0 9rem;
+  }
+  a {
+    font-size: 1rem;
   }
 }
 

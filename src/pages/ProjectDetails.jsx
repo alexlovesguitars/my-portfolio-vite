@@ -71,7 +71,11 @@ export default function ProjectDetails() {
             <p>
               {project.description}
             </p>
-            <Button hrefKey="foodiefeed">View live site</Button>
+            <Button
+            variant="full"
+            hrefKey="foodiefeed">
+              View live site
+            </Button>
           </div>
 
           <div className="project-stats">

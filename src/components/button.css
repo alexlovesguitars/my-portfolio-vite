@@ -24,13 +24,30 @@
 }
 
 .button--ghost:hover {
-  transition: 0.3s;
+  transition: 0.3s ease-in;
   background-color: #0A704B;
   color: white;
-  transform: scale(1.1);
 }
 
-.button:hover {
-  transform: scale(1.1);
-  transition: 0.2s ease-in;
+
+.button--full {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  background-color: #0A704B;
+  border: none;
+  padding: 0.75em 1.75em;
+  margin: 0.5em;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s ease-out
+}
+
+.button--full:hover {
+  background-color: #085538;
+  transition: 0.2s ease-in
 }
