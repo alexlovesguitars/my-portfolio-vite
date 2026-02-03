@@ -109,18 +109,20 @@ export default function ProjectDetails() {
           </p>
         </div>
         <div className="project-process-wrapper">
-          <div className="project-process">
-            <div>
-              <img src="" alt="" />
-            </div>
+          <div className="container-fluid">
+            <div className="project-process">
+              <div>
+                <img src="" alt="" />
+              </div>
 
-            <div className="content-process">
-              <h4>
-                THE PROCESS
-              </h4>
-              <p>
-                {project.process}
-              </p>
+              <div className="content-process">
+                <h4>
+                  THE PROCESS
+                </h4>
+                <p>
+                  {project.process}
+                </p>
+              </div>
             </div>
           </div>
         </div>

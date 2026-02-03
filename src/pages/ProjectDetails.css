@@ -46,7 +46,6 @@
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
   align-items: start;
-  padding: 0 2rem 0 2rem;
 }
 
 .challenges {
@@ -79,8 +78,6 @@
   padding-bottom: 0.5rem;
   font-weight: 300;
 }
-
-
 
 
 /* XS Screens */
@@ -133,9 +130,6 @@
   .project-overview {
     padding-right: 0;
   }
-  .content-process p {
-    padding-right: 0;
-  }
 }
 
 /* Large Screens */
@@ -159,9 +153,6 @@
 @media (min-width: 1400px) {
   .learnings, .challenges, .project-process, .project-info, .project-stats, .project-overview {
     font-size: 1.2rem;
-  }
-  .project-process {
-    padding: 0 9rem 0 9rem;
   }
   a {
     font-size: 1rem;
