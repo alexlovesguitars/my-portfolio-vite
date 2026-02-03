@@ -41,11 +41,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
   align-items: start;
-
-}
-
-.content-process p {
-  padding-right: 8rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .challenges {
@@ -56,7 +52,6 @@
   margin: 3.875rem 0 5rem;
   border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
-  padding-right: 8rem;
 }
 
 .learnings {
@@ -67,8 +62,6 @@
   margin: 3.875rem 0 5rem;
   border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
-  padding-right: 8rem;
-  padding-left: 8rem;
 }
 
 .learnings ul {
@@ -82,8 +75,68 @@
   font-weight: 300;
 }
 
-@media (min-width: 992px) {
+
+
+
+/* XS Screens */
+
+@media (max-width: 576px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem 1rem 1rem;
+  }
+  .project-stats {
+    padding: 0;
+  }
+  .project-overview {
+    padding-right: 0;
+    margin: 2rem 0 2rem;
+    padding: 1rem;
+  }
+  .project-process-wrapper {
+    margin-bottom: 0;
+  }
+  .challenges, .learnings {
+    margin: 2rem 0 2rem;
+  }
+
+  .project-process, .challenges, .learnings, .content-process {
+    grid-template-columns: 1fr;
+    padding: 0 1rem 0 1rem;
+  }
+  .project-info a {
+    margin-top: 1rem;
+  }
   .learnings {
+    padding-bottom: 1rem;
+  }
+  .content-process p {
+    padding: 0 0;
+  }
+  h4 {
+    padding: 0;
+  }
+
+
+}
+
+
+/* Medium Screens */
+@media (min-width: 776px) {
+  .project-overview {
+    padding-right: 0;
+  }
+  .content-process p {
+    padding-right: 0;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 992px) {
+  .learnings, .challenges, .project-process, .project-info, .project-stats, .project-overview {
     font-size: 1.1rem;
   }
 }
@@ -91,7 +144,7 @@
 /* XL Screens */
 
 @media (min-width: 1200px) {
-  .learnings {
+  .learnings, .challenges, .project-process, .project-info, .project-stats, .project-overview {
     font-size: 1.15rem;
   }
 }
@@ -99,9 +152,11 @@
 /* XXL Screens */
 
 @media (min-width: 1400px) {
-  .learnings {
+  .learnings, .challenges, .project-process, .project-info, .project-stats, .project-overview {
     font-size: 1.2rem;
-
+  }
+  .project-process {
+    padding: 0 9rem 0 9rem;
   }
 }
 
