@@ -12,6 +12,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.3s ease-out
 }
 
 .button--ghost {
@@ -19,6 +20,7 @@
   background-color: transparent;
   border: 2px solid #0A704B;
   text-decoration: none;
+  transition: 0.3s ease-out
 }
 
 .button--ghost:hover {
@@ -30,5 +32,5 @@
 
 .button:hover {
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.3s ease-in;
 }

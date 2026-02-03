@@ -4,7 +4,7 @@ const links = {
   github: "https://github.com/alexlovesguitars",
   linkedin: "https://www.linkedin.com/in/alexander-pfitzner",
   resume: "/Alexander-Pfitzner-Resume.pdf",
-  foodiefeed: "https://www.foodiefeed.eu",
+  foodiefeed: "https://www.foodiefeed.eu/",
   pestcontrolpets: "https://www.pestcontrolpets.com",
 };
 

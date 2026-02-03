@@ -47,9 +47,9 @@ export default function ProjectDetails() {
   if (!project) {
     return (
       <PageTransition>
-        <>
+        <div className="container-fluid">
           <h1>Project not found</h1>
-        </>
+        </div>
       </PageTransition>
     );
   }
@@ -71,7 +71,7 @@ export default function ProjectDetails() {
             <p>
               {project.description}
             </p>
-            <Button hrefKey="github">View live site</Button>
+            <Button hrefKey="foodiefeed">View live site</Button>
           </div>
 
           <div className="project-stats">
