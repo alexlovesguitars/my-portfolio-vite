@@ -70,6 +70,15 @@ p {
   padding: 0 0 1rem;
 }
 
+
+.logos {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+
 /* ---------- Visibility helpers ---------- */
 
 .accordion-only {
@@ -132,8 +141,7 @@ p {
   max-width: clamp(420px, 40vw, 550px);
   height: auto;
   object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.481);
+  border-radius: 0.25rem;
   margin-bottom: 5rem;
 }
 

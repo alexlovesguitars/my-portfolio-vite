@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
+import ScrollReveal from "../components/ScrollReveal.jsx";
 import '../pages/ProjectDetails.css';
 import Button from "../components/Button.jsx";
 import PageTransition from "../components/PageTransition.jsx";
-import FoodieFeedCover from "../assets/FoodieFeedCover.png";
-import PCP from "../assets/PCP_Placeholder.avif";
+import FoodieFeedCover from "../assets/FoodieFeed_Thumbnail.svg";
+import PCP from "../assets/PCP_Thumbnail.svg";
+import ProjectHeader from "../components/layout/ProjectHeader.jsx";
 
 
 const projects = {
@@ -57,12 +59,15 @@ export default function ProjectDetails() {
   return (
     <>
 
+    {/* <ProjectHeader /> */}
+
     <PageTransition>
-      {/* <section className="hero-banner">
+    {/*   <section className="hero-banner">
         <img src={project.image} alt={project.title} />
       </section> */}
 
       <div className="container-fluid">
+
         <div className="project">
           <div className="project-info">
             <h1>
@@ -111,9 +116,10 @@ export default function ProjectDetails() {
         <div className="project-process-wrapper">
           <div className="container-fluid">
             <div className="project-process">
-              <div>
-                <img src="" alt="" />
-              </div>
+              <ScrollReveal>
+                <img src={FoodieFeedCover} alt="" />
+              </ScrollReveal>
+
 
               <div className="content-process">
                 <h4>
@@ -135,16 +141,15 @@ export default function ProjectDetails() {
               {project.challenges}
             </p>
           </div>
-
-          <div>
-            <img src="" alt="" />
-          </div>
+            <ScrollReveal>
+              <img src={FoodieFeedCover} alt="" />
+            </ScrollReveal>
 
         </div>
         <div className="learnings">
-          <div>
-            <img src="" alt="" />
-          </div>
+          <ScrollReveal>
+            <img src={FoodieFeedCover} alt="" />
+          </ScrollReveal>
 
           <div>
             <h4>

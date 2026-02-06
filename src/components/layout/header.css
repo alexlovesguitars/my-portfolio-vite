@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 2.875rem 0 2rem 0;
+
 }
 
 .Menu {
@@ -34,22 +35,11 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  width: clamp(2.5rem, 20vw, 3.5rem);
+  height: auto;
+  flex-shrink: 0;
 }
 
-
-@media (min-width: 768px) {
-  .Logo {
-    width: 3rem;
-    height: 3rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .Logo {
-    width: 3rem;
-    height: 3rem;
-  }
-}
 
 @media (min-width: 1200px) {
   .Logo {

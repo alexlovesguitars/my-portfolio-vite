@@ -6,12 +6,18 @@ import Home from "./pages/Home.jsx";
 import ProjectDetails from "./pages/ProjectDetails.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+import ProjectHeader from "./components/layout/ProjectHeader.jsx"
 
 export default function App() {
   const location = useLocation();
+  // const isProjectPage = location.pathname.startsWith("/projects/");
+
+
+
 
   return (
     <>
+      {/* {!isProjectPage && <Header />} */}
       <Header />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>

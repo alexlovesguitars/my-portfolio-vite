@@ -1,3 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hero-banner {
+  width: 100%;
+  height: clamp(15vh, 20vw, 45vh);
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hero-banner img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
 .project {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -6,6 +27,7 @@
   margin: 3.875rem 0 5rem;
   border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .view-button:hover {
@@ -63,7 +85,7 @@
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
   align-items: start;
-  margin: 3.875rem 0 5rem;
+  margin: 3.875rem 0 12rem;
   border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
 }
@@ -79,10 +101,18 @@
   font-weight: 300;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+
 
 /* XS Screens - Mobile */
 
-@media (max-width: 576px) {
+@media (max-width: 990px) {
   .project {
     grid-template-columns: 1fr;
     gap: 0rem;
@@ -106,7 +136,7 @@
 
   .project-process, .challenges, .learnings, .content-process {
     grid-template-columns: 1fr;
-    padding: 0 1rem 0 1rem;
+    padding: 0 1rem 2rem 1rem;
   }
   .project-info a {
     margin-top: 1rem;
@@ -120,17 +150,14 @@
   h4 {
     padding: 0;
   }
-
-
 }
 
-
 /* Medium Screens */
-@media (min-width: 776px) {
+/* @media (min-width: 776px) {
   .project-overview {
     padding-right: 0;
   }
-}
+} */
 
 /* Large Screens */
 
@@ -138,6 +165,7 @@
   .learnings, .challenges, .project-process, .project-info, .project-stats, .project-overview {
     font-size: 1.1rem;
   }
+
 }
 
 /* XL Screens */
@@ -157,17 +185,4 @@
   a {
     font-size: 1rem;
   }
-}
-
-.hero-banner {
-  width: 100vw;
-  height: 65vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-banner img {
-  width: 100%;
-  object-fit: cover;
-  display: block;
 }
