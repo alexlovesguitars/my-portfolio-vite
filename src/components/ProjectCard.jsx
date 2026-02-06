@@ -7,9 +7,11 @@ const itemVariants = {
   show: { opacity: 1, y: 0 },
 };
 
-export default function ProjectCard({ project, children }) {
+const MotionDiv = motion.div;
+
+export default function ProjectCard({ project }) {
   return (
-    <motion.div variants={itemVariants} layoutId={project.slug}>
+    <MotionDiv variants={itemVariants} layoutId={project.slug}>
       <Link to={`/projects/${project.slug}`} className="project-card">
         <img
           className="project-picture"
@@ -29,6 +31,6 @@ export default function ProjectCard({ project, children }) {
 
       <p className="card-description">{project.description}</p>
       <h2 className="card-title">{project.title}</h2>
-    </motion.div>
+    </MotionDiv>
   );
 }

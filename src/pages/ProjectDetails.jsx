@@ -5,6 +5,7 @@ import Button from "../components/Button.jsx";
 import PageTransition from "../components/PageTransition.jsx";
 import FoodieFeedCover from "../assets/FoodieFeed_Thumbnail.svg";
 import PCP from "../assets/PCP_Thumbnail.svg";
+import Portfolio from "../assets/Project Thumb Portfolio.svg"
 import ProjectHeader from "../components/layout/ProjectHeader.jsx";
 
 
@@ -37,10 +38,22 @@ const projects = {
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
   },
-  portfolio: {
-
+    portfolio_alex: {
+    title: "My Portfolio",
+    description: "A modern frontend-focused portfolio built with React and Vite, backed by a Supabase PostgreSQL database, and deployed on Vercel. The application showcases my projects, skills, and ongoing work, while also serving as a sandbox for experimenting with new frontend patterns, animations, and frameworks as I continue developing post-bootcamp.",
+    overview: "After completing the bootcamp, I chose to deepen my JavaScript and frontend expertise, as this was the area I enjoyed most. I completed Meta’s React courses and applied those learnings by building a production-ready portfolio application from scratch, focusing on component architecture, routing, and performance.",
+    process: "The project followed a real-world designer–developer workflow. A complete design system and Figma files were provided, which I translated into reusable React components.I had full ownership of the technical stack and implementation, including project setup with Vite, routing with React Router, state and component structure, and deployment to Vercel.Features and pages were reviewed and QA’d collaboratively once implemented.",
+    challenges: "Coming back to coding after a short break and learning React at the same time required deliberate ramp-up. Early design concepts assumed Bootstrap for responsiveness, but I intentionally removed framework dependencies to gain deeper control over layout and styling. This increased development time but resulted in cleaner CSS and better understanding of responsive behavior.",
+    learnings: ["Built a fully responsive layout without CSS frameworks, using Flexbox, CSS Grid, and media queries", "Designed reusable, composable React components with clear separation of concerns", "Built a custom Hook for Mobile vs Desktop Menu", "Implemented client-side navigation using React Router for a multi-page SPA experience", "Integrated Framer Motion for page transitions and UI animations without compromising performance", "Gained hands-on experience deploying and iterating quickly using Vercel’s CI/CD pipeline", "Learned how to work effectively with a design system and collaborate with a dedicated designer in a production-style workflow"],
+    image: Portfolio,
+    tech: ["React,js", "JavaScript", "CSS", "Motion.js"],
+    repo: "https://github.com/alexlovesguitars/my-portfolio-vite",
+    date: "January / February 2026",
+    team: ["Danielle Pfitzner (Design & QA)"],
+    role: "Developer",
   }
 };
+
 
 export default function ProjectDetails() {
   const { slug } = useParams();
