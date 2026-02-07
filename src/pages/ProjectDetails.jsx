@@ -42,7 +42,7 @@ const projects = {
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
     hrefKey: "pestcontrolpets",
-    username: "test@test.com",
+    username: "test_user@test.com",
     password: "test1user",
   },
     portfolio_alex: {
@@ -57,11 +57,9 @@ const projects = {
     repo: "https://github.com/alexlovesguitars/my-portfolio-vite",
     date: "January / February 2026",
     team: ["Danielle Pfitzner (Design & QA)"],
-    role: "Developer",
-    hrefKey: ""
+    role: "Developer"
   }
 };
-
 
 export default function ProjectDetails() {
   const { slug } = useParams();
@@ -103,13 +101,12 @@ export default function ProjectDetails() {
               <TestCredential />
             </div>
               )}
-
-
-            <Button
+            {project.hrefKey ? (<Button
             variant="full"
             hrefKey={project.hrefKey}>
               View live site
-            </Button>
+            </Button>) : ""}
+
           </div>
 
           <div className="project-stats">

@@ -4,7 +4,7 @@ import "./TestCredential.css";
 
 export default function TestCredential() {
   const TEST_PASSWORD = "user1test";
-  const TEST_USER = "test@test.com";
+  const TEST_USER = "test_user@test.com";
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
