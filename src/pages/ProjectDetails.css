@@ -30,6 +30,13 @@ html, body {
   position: relative;
 }
 
+.test-credential-wrapper {
+  background-color: #7f1a3723;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
 .view-button:hover {
   background-color: #085538;
   transition: 0.2s ease-in;
@@ -89,6 +96,8 @@ html, body {
   border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
 }
+
+
 
 .learnings ul {
   padding-left: 0;

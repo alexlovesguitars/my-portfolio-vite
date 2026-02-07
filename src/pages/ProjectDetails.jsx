@@ -7,6 +7,7 @@ import FoodieFeedCover from "../assets/FoodieFeed_Thumbnail.svg";
 import PCP from "../assets/PCP_Thumbnail.svg";
 import Portfolio from "../assets/Project Thumb Portfolio.svg"
 import ProjectHeader from "../components/layout/ProjectHeader.jsx";
+import TestCredential from "../components/TestCredential.jsx";
 
 
 const projects = {
@@ -24,7 +25,7 @@ const projects = {
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
     hrefKey: "foodiefeed",
-    username: "test@test.de",
+    username: "test@test.com",
     password: "test1user",
   },
   pcp: {
@@ -41,7 +42,7 @@ const projects = {
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
     hrefKey: "pestcontrolpets",
-    username: "test@test.de",
+    username: "test@test.com",
     password: "test1user",
   },
     portfolio_alex: {
@@ -96,10 +97,12 @@ export default function ProjectDetails() {
             <p>
               {project.description}
             </p>
-            <h4>
-                Test Credentials
-            </h4>
-
+            {project.username && project.password && (
+            <div className="test-credential-wrapper">
+              <h4>Test Credentials</h4>
+              <TestCredential />
+            </div>
+              )}
 
 
             <Button
