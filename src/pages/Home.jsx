@@ -12,7 +12,7 @@ const projects = [
   {
     title: "FoodieFeed",
     slug: "foodiefeed",
-    description: "Ruby On Rails / Hotwire / Javascript / HTML",
+    description: "Ruby On Rails / Hotwire / Javascript / HTML / CSS",
     image: FoodieFeedCover,
     imageAlt: "Foodie Feed",
     language: Rails,
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Pest Control Pets",
     slug: "pcp",
-    description: "A Rails 7 AirBnb clone project",
+    description: "Ruby On Rails / Hotwire / Javascript / HTML / CSS",
     image: PCP,
     imageAlt: "PCP Project",
     language: Rails,
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "My Portfolio",
     slug: "portfolio_alex",
-    description: "React.js / Motion.js",
+    description: "JavaScript / React+Vite / Motion",
     image: Portfolio,
     imageAlt: "Portfolio",
     language: ReactLogo,

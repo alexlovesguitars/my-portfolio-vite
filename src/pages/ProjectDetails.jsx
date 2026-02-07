@@ -23,6 +23,9 @@ const projects = {
     date: "April 2025",
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
+    hrefKey: "foodiefeed",
+    username: "test@test.de",
+    password: "test1user",
   },
   pcp: {
     title: "Pest Control Pets",
@@ -37,6 +40,9 @@ const projects = {
     date: "March 2025",
     team: ["Dominique Bertisch, François Kergaravat"],
     role: "Team Lead with Frontend Focus",
+    hrefKey: "pestcontrolpets",
+    username: "test@test.de",
+    password: "test1user",
   },
     portfolio_alex: {
     title: "My Portfolio",
@@ -46,11 +52,12 @@ const projects = {
     challenges: "Coming back to coding after a short break and learning React at the same time required deliberate ramp-up. Early design concepts assumed Bootstrap for responsiveness, but I intentionally removed framework dependencies to gain deeper control over layout and styling. This increased development time but resulted in cleaner CSS and better understanding of responsive behavior.",
     learnings: ["Built a fully responsive layout without CSS frameworks, using Flexbox, CSS Grid, and media queries", "Designed reusable, composable React components with clear separation of concerns", "Built a custom Hook for Mobile vs Desktop Menu", "Implemented client-side navigation using React Router for a multi-page SPA experience", "Integrated Framer Motion for page transitions and UI animations without compromising performance", "Gained hands-on experience deploying and iterating quickly using Vercel’s CI/CD pipeline", "Learned how to work effectively with a design system and collaborate with a dedicated designer in a production-style workflow"],
     image: Portfolio,
-    tech: ["React,js", "JavaScript", "CSS", "Motion.js"],
+    tech: ["JavaScript", "React+Vite", "CSS", "Motion"],
     repo: "https://github.com/alexlovesguitars/my-portfolio-vite",
     date: "January / February 2026",
     team: ["Danielle Pfitzner (Design & QA)"],
     role: "Developer",
+    hrefKey: ""
   }
 };
 
@@ -89,9 +96,15 @@ export default function ProjectDetails() {
             <p>
               {project.description}
             </p>
+            <h4>
+                Test Credentials
+            </h4>
+
+
+
             <Button
             variant="full"
-            hrefKey="foodiefeed">
+            hrefKey={project.hrefKey}>
               View live site
             </Button>
           </div>

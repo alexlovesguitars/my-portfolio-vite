@@ -5,7 +5,8 @@ const links = {
   linkedin: "https://www.linkedin.com/in/alexander-pfitzner",
   resume: "/Alexander-Pfitzner-Resume.pdf",
   foodiefeed: "https://www.foodiefeed.eu/",
-  pestcontrolpets: "https://www.pestcontrolpets.com",
+  pestcontrolpets: "https://pestcontrolpets.onrender.com/",
+  portfolio: "",
 };
 
 function Button({
