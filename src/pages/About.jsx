@@ -1,5 +1,5 @@
 import Button from "../components/Button";
-import PageTransition from "../components/PageTransition";
+import PageTransition from "../hooks/PageTransition";
 import "./About.css";
 import Alex from "../assets/avatar/ALEX.svg";
 import React from "../assets/icons/React-icon.svg";

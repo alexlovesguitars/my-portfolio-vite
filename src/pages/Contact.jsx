@@ -1,5 +1,5 @@
 import ContactForm from "../components/ContactForm";
-import PageTransition from "../components/PageTransition.jsx";
+import PageTransition from "../hooks/PageTransition.jsx";
 
 export default function Contact() {
   return (

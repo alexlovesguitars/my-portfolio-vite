@@ -29,7 +29,7 @@ export default function ProjectCard({ project }) {
         </div>
       </Link>
 
-      <p className="card-description">{project.description}</p>
+      <p className="card-description">{project.info}</p>
       <h2 className="card-title">{project.title}</h2>
     </MotionDiv>
   );

@@ -2,42 +2,7 @@ import { motion as Motion } from "framer-motion";
 import Button from "../components/Button.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 import "./Home.css";
-import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.svg";
-import PCP from "../assets/thumbnails/PCP_Thumbnail.svg";
-import Portfolio from "../assets/thumbnails/Project Thumb Portfolio.svg";
-import ReactLogo from "../assets/icons/React-icon.svg";
-import Rails from "../assets/icons/Rails.png";
-
-const projects = [
-  {
-    title: "FoodieFeed",
-    slug: "foodiefeed",
-    description: "Ruby On Rails / Hotwire / Javascript / HTML / CSS",
-    image: FoodieFeedCover,
-    imageAlt: "Foodie Feed",
-    language: Rails,
-    languageAlt: "Ruby On Rails",
-  },
-  {
-    title: "Pest Control Pets",
-    slug: "pcp",
-    description: "Ruby On Rails / Hotwire / Javascript / HTML / CSS",
-    image: PCP,
-    imageAlt: "PCP Project",
-    language: Rails,
-    languageAlt: "Ruby On Rails",
-  },
-  {
-    title: "My Portfolio",
-    slug: "portfolio_alex",
-    description: "JavaScript / React+Vite / Motion",
-    image: Portfolio,
-    imageAlt: "Portfolio",
-    language: ReactLogo,
-    languageAlt: "React",
-  },
-];
-
+import { projects } from "../data/projects.js";
 
 // Framer Motion variants
 const pageVariants = { initial: { opacity: 0, y: 10 }, animate: { opacity: 1, y: 0 }, exit: { opacity: 0, y: -10 } };
