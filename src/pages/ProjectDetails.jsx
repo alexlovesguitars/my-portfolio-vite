@@ -44,7 +44,7 @@ export default function ProjectDetails() {
             </p>
             {project.username && project.password && (
             <div className="test-credential-wrapper">
-              <h4>Test Credentials</h4>
+              <h4>TEST CREDENTIALS</h4>
               <TestCredential />
             </div>
               )}
@@ -90,7 +90,7 @@ export default function ProjectDetails() {
           <div className="container-fluid">
             <div className="project-process">
               <ScrollReveal>
-                <img src={project.image} alt="" />
+                <img src={project.image_process} alt="" />
               </ScrollReveal>
 
 
@@ -102,6 +102,14 @@ export default function ProjectDetails() {
                   {project.process}
                 </p>
               </div>
+
+              {project.image_process2 ?
+              (<div className="fullwidth">
+                <ScrollReveal>
+                <img src={project.image_process2} alt="" />
+                </ScrollReveal>
+              </div>) : ""}
+
             </div>
           </div>
         </div>
@@ -115,15 +123,14 @@ export default function ProjectDetails() {
             </p>
           </div>
             <ScrollReveal>
-              <img src={project.image} alt="" />
+              <img src={project.image_challenge} alt="" />
             </ScrollReveal>
 
         </div>
         <div className="learnings">
           <ScrollReveal>
-            <img src={project.image} alt="" />
+            <img src={project.image_learnings1} alt="" />
           </ScrollReveal>
-
           <div>
             <h4>
               LEARNINGS
@@ -134,6 +141,14 @@ export default function ProjectDetails() {
               ))}
             </ul>
           </div>
+
+          {project.image_learnings2 ?
+          (<div className="fullwidth">
+            <ScrollReveal>
+            <img src={project.image_learnings2} alt="" />
+            </ScrollReveal>
+          </div>) : ""}
+
         </div>
 
       </div>

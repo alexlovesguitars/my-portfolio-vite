@@ -3,8 +3,8 @@ import "./DesktopNav.css";
 
 const navItems = [
   { label: "Projects", path: "/" },
-  { label: "About Me", path: "/about" },
-  { label: "Get In Touch", path: "/contact" },
+  { label: "About me", path: "/about" },
+  { label: "Get in touch", path: "/contact" },
 ];
 
 export default function DesktopNav() {
@@ -17,7 +17,7 @@ export default function DesktopNav() {
               to={item.path}
               className={({ isActive }) =>
                 `menu-item ${isActive ? "active" : ""} ${
-                  item.label === "Projects" || item.label === "About Me"
+                  item.label === "Projects" || item.label === "About me"
                     ? "double-border"
                     : ""
                 }`

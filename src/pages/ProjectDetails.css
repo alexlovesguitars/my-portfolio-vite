@@ -93,11 +93,8 @@ html, body {
   gap: 4rem;
   align-items: start;
   margin: 3.875rem 0 12rem;
-  border-bottom: solid 2px #B17F4B;
   padding-bottom: 5rem;
 }
-
-
 
 .learnings ul {
   padding-left: 0;
@@ -118,6 +115,10 @@ img {
 }
 
 
+.fullwidth {
+  grid-column: 1 / -1;
+  width: 100%;
+}
 
 /* XS Screens - Mobile */
 
@@ -160,13 +161,6 @@ img {
     padding: 0;
   }
 }
-
-/* Medium Screens */
-/* @media (min-width: 776px) {
-  .project-overview {
-    padding-right: 0;
-  }
-} */
 
 /* Large Screens */
 

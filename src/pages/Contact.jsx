@@ -6,7 +6,7 @@ export default function Contact() {
     <PageTransition>
       <div className="container-fluid">
         <div className="Intro text-left">
-          <h1>Get In Touch</h1>
+          <h1>Get in touch</h1>
           <div>
             <ContactForm />
           </div>

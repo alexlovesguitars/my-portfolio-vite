@@ -34,10 +34,10 @@ export default function MobileNav() {
             Projects
           </NavLink>
           <NavLink to="/about" onClick={handleNavigate}>
-            About Me
+            About me
           </NavLink>
           <NavLink to="/contact" onClick={handleNavigate}>
-            Get In Touch
+            Get in touch
           </NavLink>
         </nav>
       </SlidingPane>
