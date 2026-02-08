@@ -3,12 +3,11 @@ import { NavLink } from "react-router-dom";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "../navigation/MobileNav.css";
-import mobileMenu from "../../assets/mobile_menu.svg";
-import menuClose from "../../assets/close-menu.svg";
+import mobileMenu from "../../assets/icons/mobile_menu.svg";
+import menuClose from "../../assets/icons/close-menu.svg";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
-
   const handleNavigate = () => setOpen(false);
 
   return (

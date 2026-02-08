@@ -6,9 +6,11 @@ const pageVariants = {
   exit: { opacity: 0, y: -10 },
 };
 
+const MotionDiv = motion.div;
+
 export default function PageTransition({ children }) {
   return (
-    <motion.div
+    <MotionDiv
       variants={pageVariants}
       initial="initial"
       animate="animate"
@@ -16,6 +18,6 @@ export default function PageTransition({ children }) {
       transition={{ duration: 0.4, ease: "easeInOut" }}
     >
       {children}
-    </motion.div>
+    </MotionDiv>
   );
 }

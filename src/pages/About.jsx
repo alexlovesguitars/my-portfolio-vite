@@ -1,15 +1,15 @@
 import Button from "../components/Button";
 import PageTransition from "../components/PageTransition";
 import "./About.css";
-import Alex from "../assets/ALEX.svg";
-import React from "../assets/React-icon.svg";
-import Rails from "../assets/Rails.png";
-import Bootstrap from "../assets/Bootstrap.svg";
-import Postgres from "../assets/PostgresSQL.svg";
-import JS from "../assets/JavaScript.svg";
-import Ruby from "../assets/Ruby.svg";
-import HTML from "../assets/HTML5.svg";
-import CSS from "../assets/CSS3.svg";
+import Alex from "../assets/avatar/ALEX.svg";
+import React from "../assets/icons/React-icon.svg";
+import Rails from "../assets/icons/Rails.png";
+import Bootstrap from "../assets/icons/Bootstrap.svg";
+import Postgres from "../assets/icons/PostgresSQL.svg";
+import JS from "../assets/icons/JavaScript.svg";
+import Ruby from "../assets/icons/Ruby.svg";
+import HTML from "../assets/icons/HTML5.svg";
+import CSS from "../assets/icons/CSS3.svg";
 import { useState } from "react";
 
 

@@ -3,9 +3,9 @@ import ScrollReveal from "../components/ScrollReveal.jsx";
 import '../pages/ProjectDetails.css';
 import Button from "../components/Button.jsx";
 import PageTransition from "../components/PageTransition.jsx";
-import FoodieFeedCover from "../assets/FoodieFeed_Thumbnail.svg";
-import PCP from "../assets/PCP_Thumbnail.svg";
-import Portfolio from "../assets/Project Thumb Portfolio.svg"
+import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.svg";
+import PCP from "../assets/thumbnails/PCP_Thumbnail.svg";
+import Portfolio from "../assets//thumbnails/Project Thumb Portfolio.svg"
 import ProjectHeader from "../components/layout/ProjectHeader.jsx";
 import TestCredential from "../components/TestCredential.jsx";
 

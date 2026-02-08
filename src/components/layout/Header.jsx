@@ -1,4 +1,4 @@
-import logoAP from "../../assets/logo_AP.svg";
+import logoAP from "../../assets/icons/logo_AP.svg";
 import NavigationSwitcher from "../navigation/NavigationSwitcher.jsx";
 import "./header.css";
 

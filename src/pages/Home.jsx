@@ -2,11 +2,11 @@ import { motion as Motion } from "framer-motion";
 import Button from "../components/Button.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 import "./Home.css";
-import FoodieFeedCover from "../assets/FoodieFeed_Thumbnail.svg";
-import PCP from "../assets/PCP_Thumbnail.svg";
-import Portfolio from "../assets/Project Thumb Portfolio.svg";
-import ReactLogo from "../assets/React-icon.svg";
-import Rails from "../assets/Rails.png";
+import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.svg";
+import PCP from "../assets/thumbnails/PCP_Thumbnail.svg";
+import Portfolio from "../assets/thumbnails/Project Thumb Portfolio.svg";
+import ReactLogo from "../assets/icons/React-icon.svg";
+import Rails from "../assets/icons/Rails.png";
 
 const projects = [
   {
