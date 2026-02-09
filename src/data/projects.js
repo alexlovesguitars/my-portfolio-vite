@@ -14,8 +14,6 @@ import PCPToulousse from "../assets/projects/PCP_Toulouse.svg";
 import PortfolioStyles from "../assets/projects/Portfolio_Styles.svg";
 import PortfolioScreens from "../assets/projects/Portfolio_Screens.svg";
 
-
-
 export const projects = [
   {
     title: "FoodieFeed",
@@ -34,7 +32,7 @@ export const projects = [
     overview: "The brief was to create a fun, original web application that either solved a real-world problem or reflected something personally meaningful to the team. As the project initiator, I proposed a concept centered around food and travel—two areas I’m passionate about. The focus was on delivering a well-structured MVP rather than a fully production-ready product.",
     process: "Before writing any code, we planned the application architecture by designing wireframes, database schemas, and defining all routes. Given the tight timeline, we reviewed our approach with teaching assistants early on to validate feasibility. We collaborated remotely across different countries using Git, the CLI, and pull requests to work in parallel.",
     challenges: "The biggest challenge was maintaining focus and scope control. As beginner developers, we were eager to experiment and personalize features, which occasionally distracted us from core functionality. I also found myself spending too much time refining small UI details instead of prioritizing essential MVP features—an important lesson reinforced during project check-ins. As team lead, I set up a Trello board, assigned tasks based on individual strengths, and split the workload by routes and pages.",
-    learnings: ["The importance of clear prioritization and well-defined responsibilities in a team environment", "Focusing on core functionality over visual polish to deliver a stable MVP", "Writing clean, maintainable code is more valuable than adding flashy features", "Gained hands-on experience with Turbo Frames and JavaScript within Rails, which sparked my interest in deepening my frontend and JavaScript expertise post-bootcamp"],
+    learnings: ["Clear prioritization and well-defined responsibilities in a team environment", "Focusing on core functionality over visual polish to deliver a stable MVP", "Writing clean, maintainable code is more valuable than adding flashy features", "Gained hands-on experience with Turbo Frames and JavaScript within Rails, which sparked my interest in deepening my frontend and JavaScript expertise post-bootcamp"],
     tech: ["Rails", "PostgreSQL", "Hotwire", "Stimulus.js"],
     repo: ["https://github.com/alexlovesguitars/FoodieFeed"],
     date: "April 2025",

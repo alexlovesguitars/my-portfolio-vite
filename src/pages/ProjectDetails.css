@@ -134,11 +134,12 @@ img {
   }
   .project-overview {
     padding-right: 0;
-    margin: 2rem 0 2rem;
+    margin: 0.5rem 0 0.5rem;
     padding: 1rem;
   }
   .project-process-wrapper {
     margin-bottom: 0;
+    padding-bottom: 1rem;
   }
   .challenges, .learnings {
     margin: 2rem 0 2rem;
@@ -147,16 +148,23 @@ img {
   .project-process, .challenges, .learnings, .content-process {
     grid-template-columns: 1fr;
     padding: 0 1rem 2rem 1rem;
+    gap: 0.25rem;
   }
   .project-info a {
     margin-top: 1rem;
   }
   .learnings {
     padding-bottom: 1rem;
+
   }
   .content-process p {
     padding: 0 0;
   }
+
+  .content-process {
+    padding: 0;
+  }
+
   h4 {
     padding: 0;
   }
