@@ -8,6 +8,11 @@ import FFFlow from "../assets/projects/FF_Flow.svg";
 import FFTrello from "../assets/projects/FF_Trello.svg";
 import FFMain from "../assets/projects/FF_Main.svg";
 import FFModal from "../assets/projects/FF_Modal.svg";
+import PCPUserStories from "../assets/projects/PCP_UserStories.svg"
+import PCPList from "../assets/projects/PCP_List.svg";
+import PCPToulousse from "../assets/projects/PCP_Toulouse.svg";
+import PortfolioStyles from "../assets/projects/Portfolio_Styles.svg";
+import PortfolioScreens from "../assets/projects/Portfolio_Screens.svg";
 
 
 
@@ -45,11 +50,9 @@ export const projects = [
     info: "Ruby On Rails / Hotwire / Javascript / HTML / CSS",
     image: PCP,
     imageAlt: "PCP Project",
-    image_process: "",
-    image_process2: "",
-    image_challenge: "",
-    image_learnings1: "",
-    image_learnings2: "",
+    image_process: PCPUserStories,
+    image_challenge: PCPList,
+    image_learnings1: PCPToulousse,
     language: Rails,
     languageAlt: "Ruby On Rails",
     description: "PestControlPets is a full-stack Ruby on Rails application that allows users to rent animals to help control pests in their homes. The project is a playful take on the AirBnB business model and was built during the final weeks of the bootcamp.",
@@ -72,11 +75,8 @@ export const projects = [
     info: "JavaScript / React+Vite / Motion / CSS",
     image: Portfolio,
     imageAlt: "Portfolio",
-    image_process: "",
-    image_process2: "",
-    image_challenge: "",
-    image_learnings1: "",
-    image_learnings2: "",
+    image_process: PortfolioStyles,
+    image_challenge: PortfolioScreens,
     language: ReactLogo,
     languageAlt: "React",
     description: "A modern, frontend-focused portfolio built with React and Vite, deployed on Vercel. The site showcases my projects, skills, and ongoing work using statically managed content and assets, prioritizing performance, simplicity, and maintainability. It also serves as a sandbox for experimenting with animations, routing, and component architecture.",

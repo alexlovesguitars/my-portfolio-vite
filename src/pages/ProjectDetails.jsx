@@ -128,12 +128,13 @@ export default function ProjectDetails() {
 
         </div>
         <div className="learnings">
-          <ScrollReveal>
+          {project.image_learnings1 ?
+          (<ScrollReveal>
             <img src={project.image_learnings1} alt="" />
-          </ScrollReveal>
+          </ScrollReveal>) : ""}
           <div>
             <h4>
-              LEARNINGS
+              LEARNINGS & OUTCOMES
             </h4>
             <ul>
               {project.learnings.map((learning, index) => (
