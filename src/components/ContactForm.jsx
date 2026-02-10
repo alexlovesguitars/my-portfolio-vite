@@ -8,10 +8,10 @@ import ErrorModal from "./modals/ErrorModal.jsx";
 export default function ContactForm() {
   const { register, handleSubmit, reset } = useForm();
   const [modalType, setModalType] = useState(null);
-  const [isSending, setIsSending] = useState(false); // 🔥 new
+  const [isSending, setIsSending] = useState(false);
 
   const onSubmit = async (data) => {
-    setIsSending(true); // start sending
+    setIsSending(true);
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -34,7 +34,7 @@ export default function ContactForm() {
       console.error(error);
       setModalType("error");
     } finally {
-      setIsSending(false); // done sending
+      setIsSending(false);
     }
 
     // auto-close modal
@@ -66,9 +66,9 @@ export default function ContactForm() {
         <Button
           style={{ alignSelf: "flex-start" }}
           type="submit"
-          disabled={isSending} // disable while sending
+          disabled={isSending}
         >
-          {isSending ? "SENDING..." : "SEND"} {/* update text */}
+          {isSending ? "SENDING..." : "SEND"}
         </Button>
       </form>
 
