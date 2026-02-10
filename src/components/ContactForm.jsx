@@ -8,38 +8,38 @@ import ErrorModal from "./modals/ErrorModal.jsx";
 export default function ContactForm() {
   const { register, handleSubmit, reset } = useForm();
   const [modalType, setModalType] = useState(null);
+  const [isSending, setIsSending] = useState(false); // 🔥 new
 
   const onSubmit = async (data) => {
-  try {
-    console.log("Form Submitted", data);
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        subject: data.subject,
-        message: data.message,
-      }),
-    });
+    setIsSending(true); // start sending
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        }),
+      });
 
-    if (!res.ok) {
-      throw new Error("Failed to send");
+      if (!res.ok) {
+        throw new Error("Failed to send");
+      }
+
+      setModalType("success");
+      reset();
+    } catch (error) {
+      console.error(error);
+      setModalType("error");
+    } finally {
+      setIsSending(false); // done sending
     }
 
-    setModalType("success");
-    reset();
-  } catch (error) {
-    console.error(error);
-    setModalType("error");
-  }
-
-  // Auto-close modal
-  setTimeout(() => setModalType(null), 3000);
-};
-
+    // auto-close modal
+    setTimeout(() => setModalType(null), 3000);
+  };
 
   return (
     <>
@@ -64,10 +64,12 @@ export default function ContactForm() {
           placeholder="Your Message"
         />
         <Button
-          style={{ alignSelf: "flex-start" }} type="submit"
+          style={{ alignSelf: "flex-start" }}
+          type="submit"
+          disabled={isSending} // disable while sending
         >
-        SEND
-        </ Button>
+          {isSending ? "SENDING..." : "SEND"} {/* update text */}
+        </Button>
       </form>
 
       {modalType === "success" && (

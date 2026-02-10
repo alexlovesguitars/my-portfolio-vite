@@ -1,18 +1,29 @@
+import { VercelRequest, VercelResponse } from "@vercel/node";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
-export default async function handler(req: Request) {
+export default async function handler(
+  req: VercelRequest,
+  res: VercelResponse
+) {
   if (req.method !== "POST") {
-    return new Response("Method not allowed", { status: 405 });
+    res.status(405).send("Method Not Allowed");
+    return;
   }
 
   try {
-    const { name, email, subject, message } = await req.json();
-
+    // req.body is already typed as any by VercelRequest, but we can add safety
+    const { name, email, subject, message } = req.body as {
+      name: string;
+      email: string;
+      subject?: string;
+      message: string;
+    };
 
     if (!name || !email || !message) {
-      return new Response("Missing fields", { status: 400 });
+      res.status(400).send("Missing fields");
+      return;
     }
 
     await resend.emails.send({
@@ -29,13 +40,9 @@ export default async function handler(req: Request) {
       `,
     });
 
-
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" },
-    });
-  } catch (error) {
-    console.error(error);
-    return new Response("Internal Server Error", { status: 500 });
+    res.status(200).json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Internal Server Error");
   }
 }
