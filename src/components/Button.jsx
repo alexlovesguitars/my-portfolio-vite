@@ -13,20 +13,35 @@ function Button({
   children,
   variant = "default",
   hrefKey,
+  type = "button",
   ...props
 }) {
   const href = hrefKey ? links[hrefKey] : undefined;
 
+  // 👉 If it's a link, render <a>
+  if (href) {
+    return (
+      <a
+        href={href}
+        className={`button button--${variant}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  // 👉 Otherwise, render <button>
   return (
-    <a
-      href={href}
+    <button
+      type={type}
       className={`button button--${variant}`}
-      target="_blank"
-      rel="noopener noreferrer"
       {...props}
     >
       {children}
-    </a>
+    </button>
   );
 }
 

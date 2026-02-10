@@ -9,17 +9,37 @@ export default function ContactForm() {
   const { register, handleSubmit, reset } = useForm();
   const [modalType, setModalType] = useState(null);
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+  try {
+    console.log("Form Submitted", data);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+      }),
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to send");
+    }
+
+    setModalType("success");
     reset();
+  } catch (error) {
+    console.error(error);
+    setModalType("error");
+  }
 
-/*     // Simulate API response (70% success)
-    const isSuccess = Math.random() > 0.3;
-    setModalType(isSuccess ? "success" : "error"); */
+  // Auto-close modal
+  setTimeout(() => setModalType(null), 3000);
+};
 
-    // Auto-close after 3 seconds
-    setTimeout(() => setModalType(null), 3000);
-  };
 
   return (
     <>
