@@ -1,6 +1,6 @@
 import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.svg";
 import PCP from "../assets/thumbnails/PCP_Thumbnail.svg";
-import Portfolio from "../assets/thumbnails/Project Thumb Portfolio.svg";
+import Portfolio from "../assets/thumbnails/Project_Thumb_Portfolio.svg";
 import ReactLogo from "../assets/icons/React-icon.svg";
 import Rails from "../assets/icons/Rails.png";
 import FFSchema from "../assets/projects/FF_Schema.svg";
