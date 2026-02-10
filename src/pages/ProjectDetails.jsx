@@ -144,7 +144,7 @@ export default function ProjectDetails() {
           </div>
 
           {project.image_learnings2 ?
-          (<div className="fullwidth">
+          (<div className="fullwidth hide-on-mobile">
             <ScrollReveal>
             <img src={project.image_learnings2} alt="" />
             </ScrollReveal>

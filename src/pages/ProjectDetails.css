@@ -168,6 +168,10 @@ img {
   h4 {
     padding: 0;
   }
+
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 /* Large Screens */
