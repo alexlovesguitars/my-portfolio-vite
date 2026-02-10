@@ -11,6 +11,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+} */
+
+
 a {
   font-weight: 500;
   text-decoration: none;

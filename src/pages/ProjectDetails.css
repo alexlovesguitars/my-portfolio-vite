@@ -77,6 +77,13 @@ html, body {
   align-items: start;
 }
 
+.project-process img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
 .challenges {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -87,6 +94,13 @@ html, body {
   padding-bottom: 5rem;
 }
 
+.challenges img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
 .learnings {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -94,6 +108,13 @@ html, body {
   align-items: start;
   margin: 3.875rem 0 12rem;
   padding-bottom: 5rem;
+}
+
+.learnings img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
 }
 
 .learnings ul {
@@ -106,14 +127,6 @@ html, body {
   padding-bottom: 0.5rem;
   font-weight: 300;
 }
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 0.25rem;
-}
-
 
 .fullwidth {
   grid-column: 1 / -1;

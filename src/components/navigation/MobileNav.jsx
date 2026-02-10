@@ -13,7 +13,7 @@ export default function MobileNav() {
   return (
     <>
       <button className="menu-btn" onClick={() => setOpen(true)} aria-label="Open menu">
-        <img src={mobileMenu} alt="menu" />
+        <img src={mobileMenu} alt="menu"/>
       </button>
 
       <SlidingPane

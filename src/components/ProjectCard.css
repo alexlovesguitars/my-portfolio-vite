@@ -9,16 +9,21 @@
   font-size: 1.125rem;
   font-weight: 800;
   color: black;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
 }
 
 .card-description {
   font-size: 1rem;
   font-weight: 500;
   color: #B17F4B;
+  margin-bottom: 0.25rem;
 }
 
 .project-picture {
-  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
   border-radius: 0.25rem;
 }
 
