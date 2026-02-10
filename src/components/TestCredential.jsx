@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiCopy, FiCheck } from "react-icons/fi";
-import "./TestCredential.css";
+import "./testcredential.css";
 
 export default function TestCredential() {
   const TEST_PASSWORD = "user1test";
