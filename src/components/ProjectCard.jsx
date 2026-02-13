@@ -22,7 +22,7 @@ export default function ProjectCard({ project }) {
 
         <div className="overlay">
           <img
-            className="language-logo"
+            className="language-logo my-svgs"
             src={project.language}
             alt={project.langaugeAlt}
           />

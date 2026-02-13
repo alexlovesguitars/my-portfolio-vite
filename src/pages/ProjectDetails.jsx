@@ -90,7 +90,7 @@ export default function ProjectDetails() {
           <div className="container-fluid">
             <div className="project-process">
               <ScrollReveal>
-                <img src={project.image_process} alt="" />
+                <img src={project.image_process} className="my-svgs" alt="" />
               </ScrollReveal>
 
 
@@ -106,7 +106,7 @@ export default function ProjectDetails() {
               {project.image_process2 ?
               (<div className="fullwidth">
                 <ScrollReveal>
-                <img src={project.image_process2} alt="" />
+                  <img src={project.image_process2} className="my-svgs" alt="" />
                 </ScrollReveal>
               </div>) : ""}
 
@@ -123,14 +123,14 @@ export default function ProjectDetails() {
             </p>
           </div>
             <ScrollReveal>
-              <img src={project.image_challenge} alt="" />
+              <img src={project.image_challenge} className="my-svgs" alt="" />
             </ScrollReveal>
 
         </div>
         <div className="learnings">
           {project.image_learnings1 ?
           (<ScrollReveal>
-            <img src={project.image_learnings1} alt="" />
+            <img src={project.image_learnings1} className="my-svgs" alt="" />
           </ScrollReveal>) : ""}
           <div>
             <h4>
@@ -146,7 +146,7 @@ export default function ProjectDetails() {
           {project.image_learnings2 ?
           (<div className="fullwidth hide-on-mobile">
             <ScrollReveal>
-            <img src={project.image_learnings2} alt="" />
+              <img src={project.image_learnings2} className="my-svgs" alt="" />
             </ScrollReveal>
           </div>) : ""}
 
