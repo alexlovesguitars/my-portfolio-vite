@@ -3,16 +3,16 @@ import PCP from "../assets/thumbnails/PCP_Thumbnail.png";
 import Portfolio from "../assets/thumbnails/Project_Thumb_Portfolio.png";
 import ReactLogo from "../assets/icons/React-icon.svg";
 import Rails from "../assets/icons/Rails.png";
-import FFSchema from "../assets/projects/FF_Schema.svg";
-import FFFlow from "../assets/projects/FF_Flow.svg";
-import FFTrello from "../assets/projects/FF_Trello.svg";
-import FFMain from "../assets/projects/FF_Main.svg";
-import FFModal from "../assets/projects/FF_Modal.svg";
-import PCPUserStories from "../assets/projects/PCP_UserStories.svg"
-import PCPList from "../assets/projects/PCP_List.svg";
-import PCPToulousse from "../assets/projects/PCP_Toulouse.svg";
-import PortfolioStyles from "../assets/projects/Portfolio_Styles.svg";
-import PortfolioScreens from "../assets/projects/Portfolio_Screens.svg";
+import FFSchema from "../assets/projects/FF_Schema.png";
+import FFFlow from "../assets/projects/FF_Flow.png";
+import FFTrello from "../assets/projects/FF_Trello.png";
+import FFMain from "../assets/projects/FF_Main.png";
+import FFModal from "../assets/projects/FF_Modal.png";
+import PCPUserStories from "../assets/projects/PCP_UserStories.png";
+import PCPList from "../assets/projects/PCP_List.png";
+import PCPToulousse from "../assets/projects/PCP_Toulouse.png";
+import PortfolioStyles from "../assets/projects/Portfolio_Styles.png";
+import PortfolioScreens from "../assets/projects/Portfolio_Screens.png";
 
 export const projects = [
   {
