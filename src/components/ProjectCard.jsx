@@ -10,6 +10,7 @@ const itemVariants = {
 const MotionDiv = motion.div;
 
 export default function ProjectCard({ project }) {
+
   return (
     <MotionDiv variants={itemVariants} layoutId={project.slug}>
       <Link to={`/projects/${project.slug}`} className="project-card">
