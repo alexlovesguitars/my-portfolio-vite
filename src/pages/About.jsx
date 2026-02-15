@@ -146,7 +146,7 @@ export default function About() {
                     Le Wagon Web Dev Bootcamp '25
                   </h4>
                   <p>
-                    Completed a 9-month part time bootcamp focusing on learning HTML, CSS, JS, PostgreSQL & Ruby On Rails.
+                    Completed a 6-month part time bootcamp focusing on learning HTML, CSS, JS, PostgreSQL & Ruby On Rails.
                     During the final weeks we had to complete two fullstack Rails projects: an AirBnb clone (PestControlPets) & a project of our own (FoodieFeed) to complete the bootcamp.
                     For this purpose we had to work in teams & were able to get a first impression of professional workfflows in the tech space using version tracking with Git & agile metholodgies using Trello.
                   </p>
