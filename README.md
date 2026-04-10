@@ -10,3 +10,7 @@ Currently used:
 - React Router for Page Routing
 
 Built & designed in a classic designer / developer workflow with the help of my wife (currently Lead Product Designer at CLUE), I aim to transform the currenct code into TypeScript once I have gained a deeper understanding.
+
+I chose Vercel for its ease in deployment when using a React/Vite setup. 
+
+I look forward to adding more projects to my porfolio as time goes on!
