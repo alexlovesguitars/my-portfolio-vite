@@ -27,6 +27,10 @@
 
 /* Kill ALL white backgrounds from the pane */
 .slide-pane__content, .mobile-pane,
-.slide-pane__content-inner, .slide-pane__overlay {
+.slide-pane__content-inner {
   background-color: rgba(0, 34, 45, 0.8) !important;
+}
+
+.slide-pane__overlay {
+  background-color: none !important;
 }
