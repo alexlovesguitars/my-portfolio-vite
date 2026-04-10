@@ -4,8 +4,8 @@ const links = {
   github: "https://github.com/alexlovesguitars",
   linkedin: "https://www.linkedin.com/in/alexander-pfitzner",
   resume: "/Alexander-Pfitzner-Resume.pdf",
-  foodiefeed: "https://www.foodiefeed.eu/",
-  pestcontrolpets: "https://pestcontrolpets.onrender.com/",
+  foodiefeed: "https://www.youtube.com/watch?v=PyjysKqsE0I",
+  pestcontrolpets: "https://youtu.be/aokdQPaMXg4",
   portfolio: "",
 };
 
@@ -18,7 +18,6 @@ function Button({
 }) {
   const href = hrefKey ? links[hrefKey] : undefined;
 
-  // 👉 If it's a link, render <a>
   if (href) {
     return (
       <a
@@ -33,7 +32,6 @@ function Button({
     );
   }
 
-  // 👉 Otherwise, render <button>
   return (
     <button
       type={type}

@@ -26,7 +26,7 @@ html, body {
   align-items: start;
   margin: 3.875rem 0 5rem;
   border-bottom: solid 2px #B17F4B;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -48,6 +48,10 @@ html, body {
 
 .project-info a {
   margin: 0;
+}
+
+.project-info p {
+  margin-bottom: 3rem;
 }
 
 .project-stats {
@@ -142,6 +146,11 @@ html, body {
     margin-bottom: 1rem;
     padding: 0 1rem 1rem 1rem;
   }
+
+  .project-info p {
+  margin-bottom: 1rem;
+  }
+
   .project-stats {
     padding: 0;
   }

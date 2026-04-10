@@ -25,12 +25,7 @@ export default function ProjectDetails() {
   return (
     <>
 
-    {/* <ProjectHeader /> */}
-
     <PageTransition>
-    {/*   <section className="hero-banner">
-        <img src={project.image} alt={project.title} />
-      </section> */}
 
       <div className="container-fluid">
 
@@ -42,16 +37,11 @@ export default function ProjectDetails() {
             <p>
               {project.description}
             </p>
-            {project.username && project.password && (
-            <div className="test-credential-wrapper">
-              <h4>TEST CREDENTIALS</h4>
-              <TestCredential />
-            </div>
-              )}
+
             {project.hrefKey ? (<Button
             variant="full"
             hrefKey={project.hrefKey}>
-              View live site
+              View Demo
             </Button>) : ""}
 
           </div>
