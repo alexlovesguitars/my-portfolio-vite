@@ -13,7 +13,7 @@ import PCPList from "../assets/projects/PCP_List.png";
 import PCPToulousse from "../assets/projects/PCP_Toulouse.png";
 import PortfolioStyles from "../assets/projects/Portfolio_Styles.png";
 import PortfolioScreens from "../assets/projects/Portfolio_Screens.png";
-import PortfolioDanni from "../assets/thumbnails/Design_Thumb_Portfolio.webp";
+import PortfolioDanni from "../assets/thumbnails/Design_Thumb_Portfolio_2.webp";
 import NextJSLogo from "../assets/icons/nextjs.svg";
 
 export const projects = [
