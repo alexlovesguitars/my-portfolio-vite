@@ -25,7 +25,8 @@ export default function ProjectCard({ project }) {
           <img
             className="language-logo my-svgs"
             src={project.language}
-            alt={project.langaugeAlt}
+            alt={project.languageAlt}
+            style={project.languageAlt === "Next" ? { filter: "brightness(0) invert(1)" } : {}}
           />
         </div>
       </Link>

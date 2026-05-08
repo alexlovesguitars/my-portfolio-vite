@@ -1,6 +1,6 @@
-import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.png";
-import PCP from "../assets/thumbnails/PCP_Thumbnail.png";
-import Portfolio from "../assets/thumbnails/Project_Thumb_Portfolio.png";
+import FoodieFeedCover from "../assets/thumbnails/FoodieFeed_Thumbnail.webp";
+import PCP from "../assets/thumbnails/PCP_Thumbnail.webp";
+import Portfolio from "../assets/thumbnails/Project_Thumb_Portfolio.webp";
 import ReactLogo from "../assets/icons/React-icon.svg";
 import Rails from "../assets/icons/Rails.png";
 import FFSchema from "../assets/projects/FF_Schema.png";
@@ -13,6 +13,8 @@ import PCPList from "../assets/projects/PCP_List.png";
 import PCPToulousse from "../assets/projects/PCP_Toulouse.png";
 import PortfolioStyles from "../assets/projects/Portfolio_Styles.png";
 import PortfolioScreens from "../assets/projects/Portfolio_Screens.png";
+import PortfolioDanni from "../assets/thumbnails/Design_Thumb_Portfolio.webp";
+import NextJSLogo from "../assets/icons/nextjs.svg";
 
 export const projects = [
   {
@@ -85,6 +87,27 @@ export const projects = [
     tech: ["JavaScript", "React+Vite", "CSS", "Motion"],
     repo: "https://github.com/alexlovesguitars/my-portfolio-vite",
     date: "January / February 2026",
+    team: ["Danielle Pfitzner (Design & QA)"],
+    role: "Developer"
+  },
+  {
+    title: "Design Portfolio",
+    slug: "portfolio_danni",
+    info: "Next.js / React / TailwindCSS / Vercel",
+    image: PortfolioDanni,
+    imageAlt: "Design Portfolio Danni Pfitzner",
+    image_process: PortfolioStyles,
+    image_challenge: PortfolioScreens,
+    language: NextJSLogo,
+    languageAlt: "Next",
+    description: "",
+    overview: "",
+    process: "",
+    challenges: "",
+    learnings: [],
+    tech: ["Next.js", "Vercel", "TailwindCSS", "React"],
+    repo: "https://github.com/alexlovesguitars/dannipfitzner-portfolio",
+    date: "April 2026",
     team: ["Danielle Pfitzner (Design & QA)"],
     role: "Developer"
   },

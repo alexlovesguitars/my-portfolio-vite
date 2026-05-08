@@ -7,6 +7,7 @@ import TestCredential from "../components/TestCredential.jsx";
 import { projects } from "../data/projects.js";
 
 
+
 export default function ProjectDetails() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
