@@ -43,6 +43,7 @@ export const projects = [
     hrefKey: "foodiefeed",
     username: "test@test.com",
     password: "test1user",
+    btnname: "View Demo"
   },
   {
     title: "Pest Control Pets",
@@ -68,6 +69,7 @@ export const projects = [
     hrefKey: "pestcontrolpets",
     username: "test_user@test.com",
     password: "test1user",
+    btnname: "View Demo"
   },
   {
     title: "My Portfolio",
@@ -100,15 +102,17 @@ export const projects = [
     image_challenge: PortfolioScreens,
     language: NextJSLogo,
     languageAlt: "Next",
-    description: "",
-    overview: "",
-    process: "",
-    challenges: "",
-    learnings: [],
+    description: "A modern frontend-focused portfolio rebuilt from my wife's original design portfolio, which was first launched on Squarespace. Recreated with Next.js, React, and deployed on Vercel, the project served as both a faithful redevelopment of an existing site and an introduction to the Next.js ecosystem. It provided hands-on experience with file-based routing, static content management, and component-driven architecture, while emphasizing performance, simplicity, and maintainability.",
+    overview: "Given my focus on JavaScript and frontend development, I chose to rebuild my wife’s design portfolio using Next.js. The project involved translating an existing Squarespace site into a modern React-based application, while maintaining the original design and content structure. This allowed me to gain practical experience with Next.js features like file-based routing and static site generation.",
+    process: "The project followed a real-world designer–developer workflow. I was responsible for the technical implementation, including project setup, routing, component architecture, and deployment. The design was already established, so my focus was on faithfully translating it into code while optimizing for performance and maintainability. I collaborated with my wife for content updates and QA throughout the development process.",
+    challenges: "The main challenge was faithfully recreating an existing Squarespace design in Next.js and React while adapting it to a fully custom codebase. As my first project with Next.js, Tailwind CSS, and basic TypeScript, I had to learn file-based routing, static site generation, utility-first styling, and prop typing while ensuring the site was fully responsive and maintainable. Balancing visual accuracy with clean, component-driven architecture made the project both challenging and highly educational.",
+    learnings: ["Built a fully responsive layout using Tailwind CSS, leveraging utility classes for rapid styling and responsive design", "Designed reusable React components with clear separation of concerns, improving maintainability and scalability", "Implemented file-based routing with Next.js to create a multi-page application without additional routing libraries", "Gained hands-on experience with Next.js features like static site generation and server-side rendering", "Learned how to manage static assets and optimize images for performance in a Next.js application", "Deployed the application using Vercel’s CI/CD pipeline, enabling quick iterations and updates", "Gained introductory experience with TypeScript for typing React component props, enhancing code reliability and developer experience"],
     tech: ["Next.js", "Vercel", "TailwindCSS", "React"],
     repo: "https://github.com/alexlovesguitars/dannipfitzner-portfolio",
     date: "April 2026",
+    hrefKey: "danniportfolio",
     team: ["Danielle Pfitzner (Design & QA)"],
-    role: "Developer"
+    role: "Developer",
+    btnname: "View Portfolio"
   },
 ];

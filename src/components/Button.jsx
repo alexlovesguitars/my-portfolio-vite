@@ -6,7 +6,7 @@ const links = {
   resume: "/Alexander-Pfitzner-Resume.pdf",
   foodiefeed: "https://www.youtube.com/watch?v=PyjysKqsE0I",
   pestcontrolpets: "https://youtu.be/aokdQPaMXg4",
-  portfolio: "",
+  danniportfolio: "https://dannipfitzner.design/",
 };
 
 function Button({

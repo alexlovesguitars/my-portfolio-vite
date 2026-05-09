@@ -42,7 +42,7 @@ export default function ProjectDetails() {
             {project.hrefKey ? (<Button
             variant="full"
             hrefKey={project.hrefKey}>
-              View Demo
+              {project.btnname}
             </Button>) : ""}
 
           </div>
