@@ -15,6 +15,8 @@ import PortfolioStyles from "../assets/projects/Portfolio_Styles.png";
 import PortfolioScreens from "../assets/projects/Portfolio_Screens.png";
 import PortfolioDanni from "../assets/thumbnails/Design_Thumb_Portfolio_2.webp";
 import NextJSLogo from "../assets/icons/nextjs.svg";
+import DanniScreenShot from "../assets/projects/Danni_SubwayPage.webp";
+import DanniDevTools from "../assets/projects/Danni_DevToolsView.webp";
 
 export const projects = [
   {
@@ -24,10 +26,15 @@ export const projects = [
     image: FoodieFeedCover,
     imageAlt: "Foodie Feed",
     image_process: FFSchema,
+    image_process_alt: "Screenshot of FoodieFeed Database Schema",
     image_process2: FFFlow,
+    image_process2_alt: "Screenshot of FoodieFeed User Flow",
     image_challenge: FFTrello,
+    image_challenge_alt: "Screenshot of FoodieFeed Trello Board",
     image_learnings1: FFMain,
+    image_learnings1_alt: "Screenshot of FoodieFeed Main Page",
     image_learnings2: FFModal,
+    image_learnings2_alt: "Screenshot of FoodieFeed Modal",
     language: Rails,
     languageAlt: "Ruby On Rails",
     description: "FoodieFeed is a full-stack Ruby on Rails web application designed for food lovers who want a food-centric social platform. The app allows users to follow foodie influencers, collect recipes, and explore food and travel content in one place. The project was developed as a Minimum Viable Product (MVP).",
@@ -52,8 +59,11 @@ export const projects = [
     image: PCP,
     imageAlt: "PCP Project",
     image_process: PCPUserStories,
+    image_process_alt: "Screenshot of PCP User Stories",
     image_challenge: PCPList,
+    image_challenge_alt: "Screenshot of PCP List",
     image_learnings1: PCPToulousse,
+    image_learnings1_alt: "Screenshot of PCP Toulousse",
     language: Rails,
     languageAlt: "Ruby On Rails",
     description: "PestControlPets is a full-stack Ruby on Rails application that allows users to rent animals to help control pests in their homes. The project is a playful take on the AirBnB business model and was built during the final weeks of the bootcamp.",
@@ -78,7 +88,9 @@ export const projects = [
     image: Portfolio,
     imageAlt: "Portfolio",
     image_process: PortfolioStyles,
+    image_process_alt: "Screenshot of Portfolio Stylesheet",
     image_challenge: PortfolioScreens,
+    image_challenge_alt: "Screenshot of Portfolio Screens",
     language: ReactLogo,
     languageAlt: "React",
     description: "A modern, frontend-focused portfolio built with React and Vite, deployed on Vercel. The site showcases my projects, skills, and ongoing work using statically managed content and assets, prioritizing performance, simplicity, and maintainability. It also serves as a sandbox for experimenting with animations, routing, and component architecture.",
@@ -98,8 +110,10 @@ export const projects = [
     info: "Next.js / React / TailwindCSS / Vercel",
     image: PortfolioDanni,
     imageAlt: "Design Portfolio Danni Pfitzner",
-    image_process: PortfolioStyles,
-    image_challenge: PortfolioScreens,
+    image_process: DanniScreenShot,
+    image_process_alt: "Screenshot of Danni's Portfolio Homepage",
+    image_challenge: DanniDevTools,
+    image_challenge_alt: "Dev Tools View of Danni's Portfolio",
     language: NextJSLogo,
     languageAlt: "Next",
     description: "A modern frontend-focused portfolio rebuilt from my wife's original design portfolio, which was first launched on Squarespace. Recreated with Next.js, React, and deployed on Vercel, the project served as both a faithful redevelopment of an existing site and an introduction to the Next.js ecosystem. It provided hands-on experience with file-based routing, static content management, and component-driven architecture, while emphasizing performance, simplicity, and maintainability.",

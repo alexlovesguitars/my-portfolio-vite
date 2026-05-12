@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Header from "./components/layout/Header.jsx";
 
@@ -9,15 +9,9 @@ import Contact from "./pages/Contact.jsx";
 import ProjectHeader from "./components/layout/ProjectHeader.jsx"
 
 export default function App() {
-  const location = useLocation();
-  // const isProjectPage = location.pathname.startsWith("/projects/");
-
-
-
 
   return (
     <>
-      {/* {!isProjectPage && <Header />} */}
       <Header />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
